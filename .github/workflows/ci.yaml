@@ -72,7 +72,7 @@ jobs:
         run: npx surge --project ./build --domain threatening-fall.surge.sh
 
       - name: Open issue
-        if: failure() && github.event_name == 'pull_request'
+        if: failure() && github.event_name == 'push'
         uses: JasonEtco/create-an-issue@v2
         env:
           GITHUB_TOKEN: ${{ secrets. GITHUB_TOKEN }}
