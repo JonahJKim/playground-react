@@ -9,6 +9,6 @@ inputs:
 outputs:
   time:
     description: "The greeting time"
-runs:
+run:
   using: "node12"
   main: "dist/index.js"
